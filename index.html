@@ -1,0 +1,70 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script>
+
+$(document).ready(function(){
+$("#about").click(function(){
+    $("body").css("background", "#0CA7Db");
+    $(".home_content").fadeOut("slow").delay(400);
+    $(".about_content").fadeIn(1200);
+    $(".music_content").fadeOut("slow");
+    $(".content_wrapper").css("color", "white");
+    $(".name").css("color", "white");
+
+
+
+});
+
+$("#home").click(function(){
+    $("body").css("background", "white");
+    $(".about_content").fadeOut("slow");
+    $(".home_content").fadeIn("slow");
+    $(".music_content").fadeOut("slow");
+    $(".content_wrapper").css("color", "black");
+    $(".name").css("color", "black");
+
+});
+
+$("#music").click(function(){
+    $("body").css("background", "#ff7700");
+    $(".music_content").fadeIn("slow");
+    $(".about_content").fadeOut("slow");
+    $(".home_content").fadeOut("slow");
+    $(".content_wrapper").css("color", "black");
+    $(".name").css("color", "white");
+});
+
+});
+</script>
+
+</head>
+<body>
+<div class="content_wrapper">
+<div class="name">Ashvala Vinay</div>
+<div class="content">
+<div id="home_c" class="home_content">
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin eget nunc laoreet, sodales lacus vitae, laoreet felis. Curabitur venenatis blandit magna sed dictum. Aenean vel accumsan dui. Phasellus convallis, sapien vitae cursus facilisis, felis lorem consectetur metus, eu suscipit ante dui ac odio. Nam odio ipsum, euismod sed purus id, laoreet semper eros. Pellentesque euismod lorem metus, et congue velit consequat eget. Praesent sapien nibh, scelerisque nec arcu sit amet, aliquam eleifend dolor. Fusce est dui, tempor sagittis placerat accumsan, rutrum eu arcu. Nullam vitae ligula sodales felis semper euismod ut sed enim. Mauris vel porta augue. Nullam non dapibus ligula, et iaculis massa. Sed accumsan, justo non aliquam vestibulum, ante est imperdiet tellus, at convallis ipsum nibh quis elit. </p>
+</div>
+<div id="about_c" class="about_content">
+<p>
+Donec at hendrerit erat. Sed semper congue quam at aliquam. Morbi convallis in lorem ut malesuada. Mauris elementum velit at cursus placerat. Aliquam tincidunt ante at feugiat tincidunt. Mauris lorem est, consectetur eleifend volutpat id, sodales vitae sem. In hac habitasse platea.
+</p>
+</div>
+
+<div id="music_c" class="music_content">
+Iframe goes here.
+</div>
+<ul class="nav">
+<li class="button" id="home">Button</li>
+<li class="button" id="about">Button</li>
+<li class="button" id="music">Button</li>
+<li class="button"><a href="#">Button</a></li>
+<li class="button"><a href="mailto:#">Button</a></li>
+</ul>
+</div>
+</body>
+</html>
